@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zotero Scholar Checker Setup</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 30px; max-width: 600px; margin: auto; line-height: 1.6; color: #333; }
+        .wizard-card { background: #f9f9f9; padding: 20px; border-radius: 8px; border: 1px solid #ddd; margin-bottom: 20px; }
+        h1 { color: #c10000; text-align: center; }
+        h2 { font-size: 18px; color: #444; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { margin-top: 20px; width: 100%; padding: 12px; background: #c10000; color: white; font-size: 16px; font-weight: bold; border: none; border-radius: 4px; cursor: pointer; transition: background 0.3s; }
+        button:hover { background: #a00000; }
+        #status { margin-top: 15px; color: green; font-weight: bold; text-align: center; }
+        .help-text { font-size: 13px; color: #666; margin-top: 4px; }
+        a { color: #c10000; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Zotero Scholar Checker!</h1>
+    <p>To start seeing Zotero badges on Google Scholar, you need to connect this extension to your Zotero account.</p>
+
+    <div class="wizard-card">
+        <h2>Step 1: Get Your User ID</h2>
+        <p>Go to your <a href="https://www.zotero.org/settings/keys" target="_blank">Zotero API Keys page</a>. At the very top, look for the phrase: <em>"Your userID for use in API calls is XXXXXXX"</em>.</p>
+        <label>Zotero User ID:</label>
+        <input type="text" id="userId" placeholder="e.g., 1234567">
+    </div>
+
+    <div class="wizard-card">
+        <h2>Step 2: Create a Secret API Key</h2>
+        <p>On that same <a href="https://www.zotero.org/settings/keys" target="_blank">settings page</a>, click <strong>Create new private key</strong>.</p>
+        <ul>
+            <li>Name it "Scholar Checker".</li>
+            <li>Make sure the <strong>Allow library access</strong> box is checked.</li>
+            <li>Click Save, and immediately copy the long secret key it gives you!</li>
+        </ul>
+        <label>Zotero API Key:</label>
+        <input type="password" id="apiKey" placeholder="Paste your secret key here">
+        <div class="help-text">Your key is stored securely on your local browser and is never shared.</div>
+    </div>
+    
+    <button id="save">Save & Connect</button>
+    <div id="status"></div>
+    
+    <script src="options.js"></script>
+</body>
+</html>
