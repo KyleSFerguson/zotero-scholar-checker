@@ -28,12 +28,13 @@ Install the extension via the Chrome Web Store (or load it as an unpacked develo
 Upon installation, the Options/Settings page will automatically open. To access it later, click the extension icon in your Chrome toolbar and select Extension options.
 
 ### 3. Retrieve Zotero API Credentials
-To enable the extension to securely query your library:
-1. Log into your account on Zotero.org.
-2. Navigate to Settings -> Feeds/API.
-3. Copy your personal UserID listed on that page.
-4. Click Create new private key, provide a description (e.g., "Scholar Checker"), leave the default read-access permissions enabled, and click Save Key.
-5. Copy the newly generated Secret API Key string.
+To enable the extension to query your library securely, you must retrieve your credentials from the Zotero website:
+1. Navigate directly to [Zotero API Settings (https://www.zotero.org/settings/keys)](https://www.zotero.org/settings/keys).
+2. *Note: If this link indicates the page is inaccessible, simply log into your Zotero account first, and the page will load correctly.*
+3. Copy your personal UserID listed at the top of that page.
+4. Click Create new private key.
+5. Provide a description (e.g., "Scholar Checker"), leave the default read-access permissions enabled, and click Save Key.
+6. Copy the newly generated Secret API Key string.
 
 ### 4. Connect
 Paste your UserID and API Key into the extension's options fields and click Save & Connect. 
@@ -53,7 +54,8 @@ This extension requests minimal permissions to ensure data privacy:
 
 ## AI Usage Declaration
 
-This project utilized Gemini in its development. 
+This project utilizes artificial intelligence in its development lifecycle:
+* **Code Generation and Review:** The source code architecture, logic optimization, asynchronous message handling, and error validation were drafted, refactored, and reviewed using Gemini.
 
 ---
 
