@@ -30,7 +30,7 @@ Upon installation, the Options/Settings page will automatically open. To access 
 ### 3. Retrieve Zotero API Credentials
 To enable the extension to query your library securely, you must retrieve your credentials from the Zotero website:
 1. Navigate directly to [Zotero API Settings (https://www.zotero.org/settings/keys)](https://www.zotero.org/settings/keys).
-2. *Note: If this link indicates the page is inaccessible, simply log into your Zotero account first, and the page will load correctly.*
+2. *Note: If this link indicates "Error Access Denied", simply log into your Zotero account first, and the page will load correctly.*
 3. Copy your personal UserID listed at the top of that page.
 4. Click Create new private key.
 5. Provide a description (e.g., "Scholar Checker"), leave the default read-access permissions enabled, and click Save Key.
