@@ -55,8 +55,7 @@ This extension requests minimal permissions to ensure data privacy:
 ## AI Usage Declaration
 
 This project utilizes artificial intelligence in its development lifecycle:
-* **Code Generation and Review:** The source code architecture, logic optimization, asynchronous message handling, and error validation were drafted, refactored, and reviewed using Gemini.
-
+* **Code Generation and Review:** The code was written, reviewed, and refactored using Gemini. 
 ---
 
 ## License
