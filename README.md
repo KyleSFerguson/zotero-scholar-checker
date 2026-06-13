@@ -1,4 +1,4 @@
-# Zotero Scholar Checker
+# Zotero-Google Scholar Checker
 
 A lightweight Chrome extension that integrates Google Scholar with your personal Zotero library. It scans search results in real time and inserts color-coded badges indicating whether a paper is already saved, its reading status, and if an associated PDF is attached.
 
