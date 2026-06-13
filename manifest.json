@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Zotero Scholar Checker",
+  "name": "Google Scholar-Zotero Library Checker",
   "version": "1.0",
-  "description": "Instantly see the reading and PDF status of Google Scholar papers in your Zotero library.",
+  "description": "Instantly see the reading and PDF status of Zotero library papers while browsing Goggle Scholar.",
   "permissions": ["storage"],
   "host_permissions": [
     "*://scholar.google.com/*",
